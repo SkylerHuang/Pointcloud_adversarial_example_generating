@@ -1,6 +1,6 @@
 ### Simple Pointcloud adversarial example generate
 
-![avatar](https://github.com/SkylerHuang/Pointcloud_adversarial_example_generating//adversarial_example.png)
+![avatar](https://github.com/SkylerHuang/Pointcloud_adversarial_example_generating/adversarial_example.png)
 
 
 
