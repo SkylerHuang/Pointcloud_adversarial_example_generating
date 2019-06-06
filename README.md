@@ -19,17 +19,18 @@ Through gradient back propagation to update noisy,
 In order to make the adversarial sample  same as the original sample,we need add a constraint to Limit the magnitude of the noise.
 
 So we define a cost function:
-$$
-Loss = \frac{1}{2}||y-\vec y_{target}||^2_2+\lambda D(x,x')
-$$
+
+$$Loss = \frac{1}{2}||y-\vec y_{target}||^2_2+\lambda D(x,x')$$
+
+
 Here x is original point cloud, x' is perturbation point cloud, D is the distance of them.lambda is a trade-off between adversarial loss and perturbation magnitude.
 
 ### Pretrain model
 
 For classification tasks based on Modelnet40:
 
-pointnet:  https://drive.google.com/file/d/1ecfkbyGG3rLrNxhBA60iA125WhiTgQi9/view?usp=sharin
-
+pointnet:  
+https://drive.google.com/file/d/1ecfkbyGG3rLrNxhBA60iA125WhiTgQi9/view?usp=sharin
 
 
 pointnet++:
@@ -46,7 +47,7 @@ you must download   <a href="https://shapenet.cs.stanford.edu/media/modelnet40_p
 
 --need_label is the class you will attack
 
-```python
+```bash
 python2 train.py --need_label 0 --target_label 5
 ```
 
